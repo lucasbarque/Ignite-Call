@@ -1,0 +1,370 @@
+{
+  "$schema": "https://bendera.github.io/vscode-commit-message-editor/schemas/config-v1.schema.json",
+  "configVersion": "1",
+  "staticTemplate": [
+    "feat: Short description",
+    "",
+    "Message body"
+  ],
+  "dynamicTemplate": [
+    "{type}{scope}: {description}",
+    "",
+    "{body}"
+  ],
+  "tokens": [
+    {
+      "label": "Type",
+      "name": "type",
+      "type": "enum",
+      "combobox": true,
+      "options": [
+        {
+          "label": "🩹 adhesive-bandage",
+          "value": "🩹",
+          "description": "Correção simples para um problema não crítico."
+        },
+        {
+          "label": "⚗ alembic",
+          "value": "⚗",
+          "description": "Realizar experimentos."
+        },
+        {
+          "label": "👽 alien",
+          "value": "👽",
+          "description": "Código de atualização devido a mudanças externas na API."
+        },
+        {
+          "label": "🚑 ambulance",
+          "value": "🚑",
+          "description": "Hotfix crítico."
+        },
+        {
+          "label": "💫 animation",
+          "value": "💫",
+          "description": "Adicionar ou atualizar animações e transições."
+        },
+        {
+          "label": "⬇️ arrow-down",
+          "value": "⬇️",
+          "description": "Downgrade de dependências."
+        },
+        {
+          "label": "⬆️ arrow-up",
+          "value": "⬆️",
+          "description": "Upgrade de dependências."
+        },
+        {
+          "label": "🎨 art",
+          "value": "🎨",
+          "description": "Melhorar a estrutura / formato do código."
+        },
+        {
+          "label": "🍻 beers",
+          "value": "🍻",
+          "description": "Escrever código provisório."
+        },
+        {
+          "label": "🍱 bento",
+          "value": "🍱",
+          "description": "Adicionar ou atualizar recursos."
+        },
+        {
+          "label": "🔖 bookmark",
+          "value": "🔖",
+          "description": "Tags de lançamento/versão."
+        },
+        {
+          "label": "💥 boom",
+          "value": "💥",
+          "description": "Apresentar alterações importantes."
+        },
+        {
+          "label": "🐛 bug",
+          "value": "🐛",
+          "description": "Corrigir um bug."
+        },
+        {
+          "label": "🏗 building-construction",
+          "value": "🏗",
+          "description": "Faça alterações arquitetônicas."
+        },
+        {
+          "label": "💡 bulb",
+          "value": "💡",
+          "description": "Adicionar ou atualizar comentários no código-fonte."
+        },
+        {
+          "label": "👥 busts-in-silhouette",
+          "value": "👥",
+          "description": "Adicionar ou atualizar colaborador(es)."
+        },
+        {
+          "label": "📸 camera-flash",
+          "value": "📸",
+          "description": "Adicionar ou atualizar snapshots."
+        },
+        {
+          "label": "🗃 card-file-box",
+          "value": "🗃",
+          "description": "Executar alterações relacionadas ao banco de dados."
+        },
+        {
+          "label": "📈 chart-with-upwards-trend",
+          "value": "📈",
+          "description": "Adicionar ou atualizar análises ou rastrear código."
+        },
+        {
+          "label": "🚸 children-crossing",
+          "value": "🚸",
+          "description": "Melhorar a experiência/usabilidade do usuário."
+        },
+        {
+          "label": "🤡 clown-face",
+          "value": "🤡",
+          "description": "Zueira."
+        },
+        {
+          "label": "⚰️ coffin",
+          "value": "⚰️",
+          "description": "Remover código morto."
+        },
+        {
+          "label": "🚧 construction",
+          "value": "🚧",
+          "description": "Trabalho em andamento."
+        },
+        {
+          "label": "👷 construction-worker",
+          "value": "👷",
+          "description": "Adicione ou atualize o sistema de construção de CI."
+        },
+        {
+          "label": "🥚 egg",
+          "value": "🥚",
+          "description": "Adicione ou atualize um easter-egg."
+        },
+        {
+          "label": "🔥 fire",
+          "value": "🔥",
+          "description": "Remover código ou arquivos."
+        },
+        {
+          "label": "🌐 globe-with-meridians",
+          "value": "🌐",
+          "description": "Internacionalização e localização."
+        },
+        {
+          "label": "🥅 goal-net",
+          "value": "🥅",
+          "description": "Pegar erros."
+        },
+        {
+          "label": "💚 green-heart",
+          "value": "💚",
+          "description": "Corrigir compilação de CI."
+        },
+        {
+          "label": "🔨 hammer",
+          "value": "🔨",
+          "description": "Adicionar ou atualizar scripts de desenvolvimento."
+        },
+        {
+          "label": "➖ heavy-minus-sign",
+          "value": "➖",
+          "description": "Remover uma dependência."
+        },
+        {
+          "label": "➕ heavy-plus-sign",
+          "value": "➕",
+          "description": "Adicione uma dependência."
+        },
+        {
+          "label": "📱 iphone",
+          "value": "📱",
+          "description": "Design responsivo."
+        },
+        {
+          "label": "🏷️ label",
+          "value": "🏷️",
+          "description": "Adicionar ou atualizar tipos."
+        },
+        {
+          "label": "💄 lipstick",
+          "value": "💄",
+          "description": "Adicione ou atualize a IU e os arquivos de estilo."
+        },
+        {
+          "label": "🔒 lock",
+          "value": "🔒",
+          "description": "Corrigir problemas de segurança."
+        },
+        {
+          "label": "🔊 loud-sound",
+          "value": "🔊",
+          "description": "Adicionar ou atualizar logs."
+        },
+        {
+          "label": "🔍 mag",
+          "value": "🔍",
+          "description": "Melhorar o SEO."
+        },
+        {
+          "label": "📝 memo",
+          "value": "📝",
+          "description": "Adicionar ou atualizar a documentação."
+        },
+        {
+          "label": "🧐 monocle-face",
+          "value": "🧐",
+          "description": "Exploração/inspeção de dados."
+        },
+        {
+          "label": "🔇 mute",
+          "value": "🔇",
+          "description": "Remover registros."
+        },
+        {
+          "label": "📦 package",
+          "value": "📦",
+          "description": "Adicionar ou atualizar arquivos ou pacotes compilados."
+        },
+        {
+          "label": "📄 page-facing-up",
+          "value": "📄",
+          "description": "Adicionar ou atualizar licença."
+        },
+        {
+          "label": "🛂 passport-control",
+          "value": "🛂",
+          "description": "Trabalho no código relacionado à autorização, funções e permissões."
+        },
+        {
+          "label": "✏️ pencil2",
+          "value": "✏️",
+          "description": "Corrigir erros de digitação."
+        },
+        {
+          "label": "💩 poop",
+          "value": "💩",
+          "description": "Escreva um código ruim que precisa ser melhorado."
+        },
+        {
+          "label": "📌 pushpin",
+          "value": "📌",
+          "description": "Fixar dependências para versões específicas."
+        },
+        {
+          "label": "♻️ recycle",
+          "value": "♻️",
+          "description": "Refator de código."
+        },
+        {
+          "label": "⏪ rewind",
+          "value": "⏪",
+          "description": "Reverter alterações."
+        },
+        {
+          "label": "🚀 rocket",
+          "value": "🚀",
+          "description": "Implantar coisas."
+        },
+        {
+          "label": "🚨 rotating-light",
+          "value": "🚨",
+          "description": "Corrigir avisos do compilador / linter."
+        },
+        {
+          "label": "🙈 see-no-evil",
+          "value": "🙈",
+          "description": "Adicione ou atualize um arquivo .gitignore."
+        },
+        {
+          "label": "🌱 seedling",
+          "value": "🌱",
+          "description": "Adicionar ou atualizar arquivos seed."
+        },
+        {
+          "label": "✨ sparkles",
+          "value": "✨",
+          "description": "Apresentar novos recursos."
+        },
+        {
+          "label": "💬 speech-balloon",
+          "value": "💬",
+          "description": "Adicionar ou atualizar texto e literais."
+        },
+        {
+          "label": "🎉 tada",
+          "value": "🎉",
+          "description": "Iniciar um projeto."
+        },
+        {
+          "label": "🚩 triangular-flag-on-post",
+          "value": "🚩",
+          "description": "Adicione, atualize ou remova sinalizadores de recursos."
+        },
+        {
+          "label": "🚚 truck",
+          "value": "🚚",
+          "description": "Mover ou renomear recursos (por exemplo: arquivos, caminhos, rotas)."
+        },
+        {
+          "label": "🔀 twisted-rightwards-arrows",
+          "value": "🔀",
+          "description": "Mesclar ramificações."
+        },
+        {
+          "label": "🗑 wastebasket",
+          "value": "🗑",
+          "description": "Código obsoleto que precisa ser limpo."
+        },
+        {
+          "label": "♿️ wheelchair",
+          "value": "♿️",
+          "description": "Melhorar a acessibilidade."
+        },
+        {
+          "label": "✅ white-check-mark",
+          "value": "✅",
+          "description": "Adicionar ou atualizar testes."
+        },
+        {
+          "label": "🔧 wrench",
+          "value": "🔧",
+          "description": "Adicionar ou atualizar arquivos de configuração."
+        },
+        {
+          "label": "⚡️ zap",
+          "value": "⚡️",
+          "description": "Melhorar o desempenho."
+        }
+      ],
+      "description": "Tipo de alterações"
+    },
+    {
+      "label": "Scope",
+      "name": "scope",
+      "description": "Um escopo pode ser fornecido para um tipo de confirmação, para fornecer informações contextuais adicionais e está contido entre parênteses, por exemplo, \"feat(parser): adicionar capacidade de analisar matrizes\".",
+      "type": "text",
+      "multiline": false,
+      "prefix": "(",
+      "suffix": ")"
+    },
+    {
+      "label": "Short description",
+      "name": "description",
+      "description": "Breve descrição na linha de assunto.",
+      "type": "text",
+      "multiline": false
+    },
+    {
+      "label": "Body",
+      "name": "body",
+      "descrição": "Corpo opcional",
+      "type": "text",
+      "multiline": true,
+      "lines": 5,
+      "maxLines": 10
+    }
+  ]
+}
