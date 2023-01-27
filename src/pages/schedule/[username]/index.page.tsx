@@ -1,6 +1,5 @@
-import { Container } from '@/pages/home/styles'
 import React from 'react'
-import { UserHeader } from './styles'
+import { UserHeader, Container } from './styles'
 import { Avatar, Heading, Text } from '@ignite-ui/react'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { prisma } from '@/lib/prisma'
