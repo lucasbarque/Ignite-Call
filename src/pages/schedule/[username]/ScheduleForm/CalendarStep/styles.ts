@@ -1,16 +1,15 @@
-import { Box, Text, styled } from '@ignite-ui/react'
+import { Box, styled, Text } from '@ignite-ui/react'
 
 export const Container = styled(Box, {
   margin: '$6 auto 0',
   padding: 0,
   display: 'grid',
-  maxWidth: '100%',
   position: 'relative',
 
   variants: {
     isTimePickerOpen: {
       true: {
-        gridAutoColumns: '1fr 280px',
+        gridTemplateColumns: '1fr 280px',
 
         '@media(max-width: 900px)': {
           gridTemplateColumns: '1fr',
@@ -50,7 +49,7 @@ export const TimePickerList = styled('div', {
   gridTemplateColumns: '1fr',
   gap: '$2',
 
-  '@media(max-width: 900px)': {
+  '@media (max-width: 900px)': {
     gridTemplateColumns: '2fr',
   },
 })
@@ -68,6 +67,7 @@ export const TimePickerItem = styled('button', {
   '&:last-child': {
     marginBottom: '$6',
   },
+
   '&:disabled': {
     background: 'none',
     cursor: 'default',
@@ -77,6 +77,7 @@ export const TimePickerItem = styled('button', {
   '&:not(:disabled):hover': {
     background: '$gray500',
   },
+
   '&:focus': {
     boxShadow: '0 0 0 2px $colors$gray100',
   },
