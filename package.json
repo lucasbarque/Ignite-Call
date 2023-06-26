@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "create-container": "docker run --name mysql -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 mysql:latest"
+    "create-container": "docker run --name mysql -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 mysql:latest",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
